@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'poppins';
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: aliceblue;
+    }
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .container {
+      width: 270px;
+      background-color: white;
+      box-shadow: 2px 5px 15px 2px #666;
+      margin: 10px; /* Add margin for space between boxes */
+    }
+    .image {
+      width: 100%;
+      height: 190px; /* Set the desired height for the image */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%; /* Adjust this value to increase the size further */
+    }
+
+    h3, p, h2 {
+      text-align: center;
+      color: #444;
+    }
+    p {
+      margin-top: 10px;
+      padding: 0px 5px;
+    }
+    h2 {
+      margin-top: 10px;
+      color: #00cbfe;
+    }
+    .box {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #00cbfe;
+    }
+    button {
+      border: none;
+      background: none;
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+    button.hover {
+      background-color: rgb(40, 181, 192);
+    }
+    button:active {
+      opacity: 0.8;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: #e9e9e9;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #2196F3;
+      color: white;
+    }
+
+    .topnav input[type=text] {
+      float: right;
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      border: none;
+      font-size: 17px;
+      width: 70%; /* Increase the width of the search box */
+    }
+
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+      padding-right: 30px; /* Space for the search symbol */
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <input type="text" placeholder="Search..">
+    <div class="search-icon">🔍</div>
+  </div>
+  <div class="products-container">
+  <div class="container">
+    <span class="image"><img src="https://www.shutterstock.com/image-photo/white-sneaker-sport-shoe-on-260nw-2283568905.jpg" ></span>
+    <h3>Red Tape</h3>
+    <p>Sneaker Casual Shoes For Men | Soft Cushion Insole, Slip-Resistance</p>
+    <h2>&#8377 1500</h2>
+    <div class="box">
+      <button>Add to cart</button>
+    </div>
+  </div>
+  <div class="container">
+    <span class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J1R3LnaqF759dpJ4Z0LlaFbxY8TItMuFAw&usqp=CAU"></span>
+    <h3>Mauve Check Shirt</h3>
+    <p>Mauve Check Shirt
+      Brown men's occasion check shirt</p>
+    <h2>&#8377 1649</h2>
+    <div class="box">
+      <button>Add to cart</button>
+    </div>
+  </div>
+  <div class="container">
+    <span class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqnhWcS0scG-TrASLXptb_-hLKXZNok5KtQ&usqp=CAU" ></span>
+    <h3>Shirt</h3>
+    <p>Men Slim Fit Checkered Spread Collar Casual Shirt</p>
+    <h2>&#8377 849</h2>
+    <div class="box">
+      <button>Add to cart</button>
+    </div>
+  </div>
+  <div class="container">
+    <span class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAwLFsAK0oCw7chIoTyiLI3eMVhKoL_UgMVL4q74uzA&s"></span>
+    <h3>DSC Cricket Bat</h3>
+    <p>DSC Cricket Bat English Willow Intense Rage English Willow Cricket Bat  (795-840)</p>
+    <h2>&#8377 9999</h2>
+    <div class="box">
+      <button>Add to cart</button>
+    </div>
+  </div>
+  <div class="container">
+    <span class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCLKKutSg8cv3DZ5nhFWYQMJP6PQCwjY5RA&usqp=CAU"></span>
+    <h3>POCO X5 PRO 5G</h3>
+    <p>POCO X5 Pro 5G (Black, 128 GB)  (6 GB RAM)</p>
+    <h2>&#8377 22999</h2>
+    <div class="box">
+      <button>Add to cart</button>
+    </div>
+  </div>
+  
+  
+  </div>
+  </div>
+</body>
+</html>
